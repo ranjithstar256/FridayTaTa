@@ -1,7 +1,7 @@
 package com.example.fridaytata;
 
+import android.content.Intent;
 import android.os.Bundle;
-import android.telephony.SmsManager;
 import android.view.View;
 import android.widget.EditText;
 
@@ -26,8 +26,20 @@ public class SmsMail extends AppCompatActivity {
     }
 
     public void smssend(View view) {
-        SmsManager smsManager = SmsManager.getDefault();
-        smsManager.sendTextMessage(ed1.getText().toString(), null, ed2.getText().toString(), null, null);
+        //SmsManager smsManager = SmsManager.getDefault();
+       // smsManager.sendTextMessage(ed1.getText().toString(), null, ed2.getText().toString(), null, null);
+
+        Intent email = new Intent(Intent.ACTION_SEND);
+
+
+        email.putExtra(Intent.EXTRA_EMAIL, new String[]{"ranjithpsundar@gmail.com"});
+        email.putExtra(Intent.EXTRA_SUBJECT, "class test mail");
+        email.putExtra(Intent.EXTRA_TEXT, "all is well!");
+
+        //need this to prompts email client only
+        email.setType("message/rfc822");
+
+        startActivity(Intent.createChooser(email, "Choose an Email client :")); // no permission needed for mail
     }
 
 }
