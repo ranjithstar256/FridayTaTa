@@ -1,6 +1,7 @@
 package com.example.fridaytata;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -41,5 +42,45 @@ public class SmsMail extends AppCompatActivity {
 
         startActivity(Intent.createChooser(email, "Choose an Email client :")); // no permission needed for mail
     }
+
+
+
+    public void openc() {
+        String url = "https://api.whatsapp.com/send?phone="+"+918148580586";
+        Intent i = new Intent(Intent.ACTION_VIEW);
+        i.setData(Uri.parse(url));
+        startActivity(i);
+    }
+
+
+
+// types of intent
+    // explict intent  ==  switching bw user defined activities
+    // implict intent   == opening a build in activity = camera , whatsapp
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 }

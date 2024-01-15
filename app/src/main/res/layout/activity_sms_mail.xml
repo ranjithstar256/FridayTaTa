@@ -24,9 +24,9 @@
         android:hint="message" />
 
     <Button
-        android:id="@+id/button11"
+        android:id="@+id/buttonc11"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="smssend"
-        android:text="send sms" />
+        android:onClick="openc"
+        android:text="cam" />
 </LinearLayout>
