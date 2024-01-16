@@ -6,4 +6,13 @@
     </style>
 
     <style name="Theme.FridayTaTa" parent="Base.Theme.FridayTaTa" />
+
+    <style name="Theme.FridayTaTa.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.FridayTaTa.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.FridayTaTa.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>
