@@ -42,10 +42,7 @@ public class SmsMail extends AppCompatActivity {
 
         startActivity(Intent.createChooser(email, "Choose an Email client :")); // no permission needed for mail
     }
-
-
-
-    public void openc() {
+    public void dsddsd(View a) {
         String url = "https://api.whatsapp.com/send?phone="+"+918148580586";
         Intent i = new Intent(Intent.ACTION_VIEW);
         i.setData(Uri.parse(url));
