@@ -30,10 +30,16 @@
         android:onClick="savetodb"
         android:text="save" />
 
+    <Button
+         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="getloc"
+        android:text="get location" />
+
     <TextView
+        android:id="@+id/tvv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="32sp"
-        android:id="@+id/tvv"
-        android:text="sometg"></TextView>
+        android:text="sometg"
+        android:textSize="32sp"></TextView>
 </LinearLayout>

@@ -30,10 +30,15 @@ public class SaveDataToSQLiteDB extends AppCompatActivity {
     public void savetodb(View view) {
         name= edname.getText().toString();
         loc= edloc.getText().toString();
-
         dbClass.saveoperation(name,loc);
-
         Toast.makeText(this, "data saved!", Toast.LENGTH_SHORT).show();
+    }
+    public void getloc(View view) {
+        name= edname.getText().toString();
+
+        String loc4mdb =dbClass.GetLocwitName(name);
+
+        textView.setText(loc4mdb);
 
     }
 }
