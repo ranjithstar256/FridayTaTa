@@ -32,6 +32,13 @@ public class GouravDBClass extends SQLiteOpenHelper {
     }
 
     public String GetLocwitName(String na){
+
+       /// Cursor d = sq.rawQuery("select * from india",null);
+      //  d.moveToFirst();
+      // String lo= d.getString(d.getColumnIndex("Location"));
+      //  d.getString(d.getColumnIndex("password"));
+      //  d.getString(d.getColumnIndex("Mobile"));
+
         Cursor c;
         c= sq.query("india",null,"Name=?",new String[]{na}
         ,null,
