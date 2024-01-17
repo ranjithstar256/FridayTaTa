@@ -21,8 +21,8 @@
         android:theme="@style/Theme.FridayTaTa"
         tools:targetApi="31">
         <activity
-            android:name=".SaveDataToSQLiteDB"
-            android:exported="true" >
+            android:name=".RetrofitExpl"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -30,10 +30,13 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".GmailFragmentExpl"
+            android:name=".SaveDataToSQLiteDB"
             android:exported="true">
 
         </activity>
+        <activity
+            android:name=".GmailFragmentExpl"
+            android:exported="true"></activity>
         <activity
             android:name=".FragmentsExpl"
             android:exported="true" />
